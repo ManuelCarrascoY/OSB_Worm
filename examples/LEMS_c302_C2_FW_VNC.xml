@@ -1,0 +1,982 @@
+<Lems>
+    
+    <!--
+
+
+Parameters and setting used to generate this network:
+
+    Data reader:                    UpdatedSpreadsheetDataReader2
+    c302 version:                   0.7.5
+    PyOpenWorm version:             0.10.0.post0
+    Cells:                          ['VA1', 'VA2', 'VA3', 'VA4', 'VA5', 'VA6', 'VA7', 'VA8', 'VA9', 'VA10', 'VA11', 'VA12', 'VB1', 'VB2', 'VB3', 'VB4', 'VB5', 'VB6', 'VB7', 'VB8', 'VB9', 'VB10', 'VB11', 'AS1', 'AS2', 'AS3', 'AS4', 'AS5', 'AS6', 'AS7', 'AS8', 'AS9', 'AS10', 'AS11', 'DA1', 'DA2', 'DA3', 'DA4', 'DA5', 'DA6', 'DA7', 'DA8', 'DA9', 'DB1', 'DB2', 'DB3', 'DB4', 'DB5', 'DB6', 'DB7', 'VD1', 'VD2', 'VD3', 'VD4', 'VD5', 'VD6', 'VD7', 'VD8', 'VD9', 'VD10', 'VD11', 'VD12', 'VD13', 'DD1', 'DD2', 'DD3', 'DD4', 'DD5', 'DD6', 'AVBL', 'AVBR', 'AVAL', 'AVAR']
+    Cell stimulated:                []
+    Connection:                     []
+    Connection numbers overridden:  {'^.+-.+$': 1}
+    Connection numbers scaled:      None
+    Connection polarities override: {'^AS\\d+-VD\\d+$': 'inh', '^DA\\d+-DD\\d+$': 'inh', '^DB\\d+-DD\\d+$': 'inh', '^AS\\d+-DD\\d+$': 'inh', '^VA\\d+-VD\\d+$': 'inh'}
+    Muscles:                        []
+
+    Known BioParameters:
+        BioParameter: AVAL_to_DA1_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA6_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA7_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA8_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_DA9_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA10_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA11_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA1_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA6_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA7_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA8_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAL_to_VA9_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA1_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA6_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA8_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_DA9_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA10_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA11_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA12_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA1_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA7_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA8_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVAR_to_VA9_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB6_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_DB7_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB10_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB11_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB1_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB6_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB7_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB8_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBL_to_VB9_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB1_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB6_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_DB7_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_MVL16_exc_syn_conductance = 0 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB10_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB11_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB4_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB5_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB6_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB7_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB8_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: AVBR_to_VB9_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA1_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA1_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA1_to_DA2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA1_to_DB1_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA1_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA1_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA1_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA1_exc_syn_conductance = 20 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA1_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA1_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA3_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA3_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA3_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA3_exc_syn_conductance = 20 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA3_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA3_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_DA5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA2_to_DB1_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA2_to_VA1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA2_to_VA6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA3_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA2_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA2_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA2_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA2_exc_syn_conductance = 20 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA2_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA2_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA4_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA4_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA4_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA4_exc_syn_conductance = 20 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA4_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA4_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_DA5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA3_to_DB3_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA3_to_VA2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA3_to_VA6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA4_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_DA3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA4_to_DA3_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_DA3_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_DA3_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_DA3_exc_syn_conductance = 20 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_DA3_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_DA3_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_DB2_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA4_to_VA3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA5_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA4_exc_syn_ad = 18 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA4_exc_syn_ar = 0.08 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA4_exc_syn_beta = 0.21 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA4_exc_syn_conductance = 20 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA4_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DA4_exc_syn_vth = -10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA5_to_DB4_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA6_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA6_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA6_to_DA5_exc_syn_ad = 18 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA6_to_DA5_exc_syn_ar = 0.08 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA6_to_DA5_exc_syn_beta = 0.21 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA6_to_DA5_exc_syn_conductance = 20 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA6_to_DA5_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA6_to_DA5_exc_syn_vth = -10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA6_to_DB5_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA7_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA7_to_DA6_exc_syn_ad = 18 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA7_to_DA6_exc_syn_ar = 0.08 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA7_to_DA6_exc_syn_beta = 0.21 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA7_to_DA6_exc_syn_conductance = 20 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA7_to_DA6_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA7_to_DA6_exc_syn_vth = -10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA7_to_DA8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA7_to_DB6_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA8_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA8_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA7_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA7_exc_syn_ad = 18 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA7_exc_syn_ar = 0.08 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA7_exc_syn_beta = 0.21 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA7_exc_syn_conductance = 20 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA7_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA7_exc_syn_vth = -10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DA9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_DB7_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA8_to_VA10_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA8_to_VA12_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_AVAL_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA9_to_AVAR_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA9_to_DA8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_DA8_exc_syn_ad = 18 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_DA8_exc_syn_ar = 0.08 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_DA8_exc_syn_beta = 0.21 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_DA8_exc_syn_conductance = 20 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_DA8_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_DA8_exc_syn_vth = -10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_DB7_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DA9_to_VA10_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_VA11_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DA9_to_VA12_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB1_to_AVBR_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_DB2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB1_to_DB2_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_DB2_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_DB2_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_DB2_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_DB2_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_DB2_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_VB3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB1_to_VD2_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB1_to_VD3_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB3_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB3_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB3_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB3_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB3_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_DB3_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_VB4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB2_to_VD3_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB2_to_VD4_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB4_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB4_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB4_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB4_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB4_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_DB4_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_VB6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB3_to_VD4_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_VD5_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB3_to_VD6_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB5_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB5_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB5_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB5_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB5_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_DB5_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB4_to_VD6_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB6_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB6_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB6_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB6_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB6_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_DB6_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_VD4_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_VD5_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_VD6_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB5_to_VD7_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB7_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB7_exc_syn_ad = 18 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB7_exc_syn_ar = 0.08 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB7_exc_syn_beta = 0.21 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB7_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB7_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_DB7_exc_syn_vth = -10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_VD7_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_VD8_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB6_to_VD9_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_DB6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DB7_to_VD10_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_VD11_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_VD12_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_VD13_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_VD8_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DB7_to_VD9_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: DD1_to_DD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD1_to_VD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD1_to_VD3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD2_to_DD1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD2_to_DD3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD2_to_VD3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD2_to_VD4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD2_to_VD5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD3_to_DD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD3_to_DD4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD4_to_DD3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD4_to_DD5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD5_to_DD4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD5_to_DD6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD6_to_DD5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD6_to_VD11_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD6_to_VD12_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: DD6_to_VD13_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA10_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA10_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA10_to_DA8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA10_to_DA9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA10_to_VA9_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA10_to_VA9_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA10_to_VA9_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA10_to_VA9_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA10_to_VA9_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA10_to_VA9_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_DA9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA11_to_VA10_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_VA10_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_VA10_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_VA10_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_VA10_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_VA10_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA11_to_VA12_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_AVAR_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA12_to_DA8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_DA9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VA11_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VA11_exc_syn_ad = 73 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VA11_exc_syn_ar = 0.19 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VA11_exc_syn_beta = 2.81 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VA11_exc_syn_conductance = 18 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VA11_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VA11_exc_syn_vth = -22 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA12_to_VD12_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA12_to_VD13_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA1_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA1_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA1_to_DA2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA2_to_DA3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA1_exc_syn_ad = 73 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA1_exc_syn_ar = 0.19 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA1_exc_syn_beta = 2.81 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA1_exc_syn_conductance = 18 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA1_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA1_exc_syn_vth = -22 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA3_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA3_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA3_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA3_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA3_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA3_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA2_to_VA6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA2_to_VD2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_DA4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA2_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA2_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA2_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA2_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA2_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA2_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA4_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA4_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA4_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA4_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA4_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VA4_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA3_to_VD3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_VA3_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_VA3_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_VA3_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_VA3_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_VA3_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_VA3_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA4_to_VA7_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA5_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA4_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA4_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA4_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA4_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA4_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA4_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA6_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA6_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA6_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA6_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA6_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA5_to_VA6_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA6_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA6_to_DA2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_DA3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_VA2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_VA5_exc_syn_ad = 73 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_VA5_exc_syn_ar = 0.19 per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_VA5_exc_syn_beta = 2.81 per_mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_VA5_exc_syn_conductance = 18 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_VA5_exc_syn_erev = 10 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA6_to_VA5_exc_syn_vth = -22 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA7_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA7_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA7_to_VA4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VA7_to_VA6_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA7_to_VA6_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA7_to_VA6_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA7_to_VA6_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA7_to_VA6_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA7_to_VA6_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_VA7_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_VA7_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_VA7_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_VA7_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_VA7_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA8_to_VA7_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_AVAL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_AVAR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_VA8_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_VA8_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_VA8_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_VA8_exc_syn_conductance = 18 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_VA8_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VA9_to_VA8_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB11_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB11_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB11_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB11_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB11_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB11_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB11_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB10_to_VB9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB11_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB11_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB11_to_VB10_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB1_to_AVBL_elec_syn_gbase = 0.005 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB1_to_VB2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB1_to_VB2_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB1_to_VB2_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB1_to_VB2_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB1_to_VB2_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB1_to_VB2_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB1_to_VB2_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB3_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB3_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB3_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB3_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB3_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB3_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB2_to_VB4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB3_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB3_to_DB1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB4_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB4_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB4_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB4_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB4_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB3_to_VB4_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_DB2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB5_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB5_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB5_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB5_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB5_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB4_to_VB5_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB6_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB6_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB6_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB6_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB6_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB5_to_VB6_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_DB3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB7_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB7_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB7_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB7_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB7_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB7_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB6_to_VB7_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB8_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB8_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB8_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB8_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB8_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB7_to_VB8_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB7_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB9_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB9_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB9_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB9_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB9_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB8_to_VB9_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_AVBL_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_AVBR_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB10_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB10_exc_syn_ad = 73 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB10_exc_syn_ar = 0.19 per_s (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB10_exc_syn_beta = 2.81 per_mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB10_exc_syn_conductance = 30 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB10_exc_syn_erev = 10 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB10_exc_syn_vth = -22 mV (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VB9_to_VB8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD10_to_VB9_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD10_to_VD11_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD10_to_VD9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD11_to_DD6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD11_to_VB10_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD11_to_VD10_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD11_to_VD12_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD12_to_DD6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD12_to_VA12_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD12_to_VB11_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD12_to_VD11_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD12_to_VD13_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD13_to_DD6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD13_to_VA12_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD13_to_VD12_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD1_to_VB1_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD1_to_VD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD2_to_DD1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD2_to_VA2_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD2_to_VB2_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD2_to_VD1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD2_to_VD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD2_to_VD3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD3_to_DD1_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD3_to_DD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD3_to_VA3_elec_syn_gbase = 0.001 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD3_to_VB2_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD3_to_VB3_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD3_to_VD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD3_to_VD4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD4_to_DD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD4_to_VB3_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD4_to_VD3_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD4_to_VD5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD5_to_DD2_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD5_to_VB1_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD5_to_VB4_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD5_to_VD4_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD5_to_VD6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD6_to_VB5_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD6_to_VD5_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD6_to_VD7_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD7_to_VB6_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD7_to_VB7_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD7_to_VD6_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD7_to_VD8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD8_to_VB7_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD8_to_VD7_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD8_to_VD9_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD9_to_VB8_exc_syn_conductance = 0.2 nS (SRC: Add with param_overrides, certainty 0)
+        BioParameter: VD9_to_VD10_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: VD9_to_VD8_elec_syn_gbase = 0.001 nS (SRC: Set with param_overrides, certainty 0)
+        BioParameter: ca_boyle_erev = 10 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: ca_conc_decay_time = 13.811870945509265 ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: ca_conc_decay_time_muscle = 60.8 ms (SRC: Set with param_overrides, certainty 0)
+        BioParameter: ca_conc_rho = 0.000238919 mol_per_m_per_A_per_s (SRC: BlindGuess, certainty 0.1)
+        BioParameter: ca_conc_rho_muscle = 0.002338919 mol_per_m_per_A_per_s (SRC: Set with param_overrides, certainty 0)
+        BioParameter: cell_diameter = 5 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: initial_memb_pot = -50 mV (SRC: Set with param_overrides, certainty 0)
+        BioParameter: k_fast_erev = -70 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: k_slow_erev = -60 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: leak_erev = -60 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_ca_boyle_cond_density = 0.812775772264702 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_ca_boyle_erev = 0 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_initial_memb_pot = -28 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_k_fast_cond_density = 0.042711643917483308 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_k_fast_erev = -30 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_k_slow_cond_density = 0.45833751019872582 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_k_slow_erev = -30 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_leak_cond_density = 0.002 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_leak_erev = -20 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_length = 20 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_specific_capacitance = 1 uF_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_spike_thresh = -10 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: muscle_to_muscle_elec_syn_gbase = 0 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_ca_boyle_cond_density = 1.812775772264702 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_k_fast_cond_density = 0.042711643917483308 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_k_slow_cond_density = 0.45833751019872582 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_leak_cond_density = 0.002 mS_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_spike_thresh = -55 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_mu = -30 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_sigma = 0.4 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_motor_delayed_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_elec_syn_gbase = 0.00152 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_conductance = 0.10 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_delta = 19 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_erev = 37 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_k = 1.205per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_mu = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_sigma = 0.5 per_mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_vth = 27 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_exc_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_conductance = 1.29 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_delta = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_erev = -35 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_k = 0.025per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_muscle_inh_syn_vth = 0 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_elec_syn_gbase = 0.01252 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_elec_syn_weight = 1 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_conductance = 0.49 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_delta = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_erev = -10 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_k = 0.5per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_exc_syn_vth = 00 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_conductance = 0.29 nS (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_delta = 5 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_erev = -70 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_k = 0.015per_ms (SRC: BlindGuess, certainty 0.1)
+        BioParameter: neuron_to_neuron_inh_syn_vth = 0 mV (SRC: BlindGuess, certainty 0.1)
+        BioParameter: specific_capacitance = 5 uF_per_cm2 (SRC: BlindGuess, certainty 0.1)
+        BioParameter: unphysiological_offset_current = 0 pA (SRC: KnownError, certainty 0)
+        BioParameter: unphysiological_offset_current_del = 0 ms (SRC: KnownError, certainty 0)
+        BioParameter: unphysiological_offset_current_dur = 2000 ms (SRC: KnownError, certainty 0)
+
+   
+    -->
+
+    <Target component="sim_c302_C2_FW_VNC" />
+
+    <!-- Include core NeuroML2 ComponentType definitions -->
+
+    <Include file="Cells.xml" />
+    <Include file="Networks.xml" />
+    <Include file="Simulation.xml" />
+    
+    <Include file="cell_C.xml" />
+    
+    <Include file="custom_muscle_components.xml" />
+    
+    <Include file="custom_synapses.xml" />
+    
+    <Include file="c302_C2_FW_VNC.net.nml" />
+
+    <!-- End of NeuroML2 content -->
+    
+
+    <Simulation id="sim_c302_C2_FW_VNC" length="6000ms" step="0.05ms" target="c302_C2_FW_VNC">
+
+        <Display id="neurons" title="c302_C2_FW_VNC: Membrane potential of a number of neurons" timeScale="1ms" xmin="-600.0" xmax="6600.0" ymin="-60" ymax="25">
+            
+            <Line id="AS1" quantity="AS1/0/GenericNeuronCell/v" scale="1mV" color="#f87100" timeScale="1ms" />
+            <Line id="AS10" quantity="AS10/0/GenericNeuronCell/v" scale="1mV" color="#ac15c4" timeScale="1ms" />
+            <Line id="AS11" quantity="AS11/0/GenericNeuronCell/v" scale="1mV" color="#58a09e" timeScale="1ms" />
+            <Line id="AS2" quantity="AS2/0/GenericNeuronCell/v" scale="1mV" color="#007df7" timeScale="1ms" />
+            <Line id="AS3" quantity="AS3/0/GenericNeuronCell/v" scale="1mV" color="#9a1694" timeScale="1ms" />
+            <Line id="AS4" quantity="AS4/0/GenericNeuronCell/v" scale="1mV" color="#7b5b40" timeScale="1ms" />
+            <Line id="AS5" quantity="AS5/0/GenericNeuronCell/v" scale="1mV" color="#008200" timeScale="1ms" />
+            <Line id="AS6" quantity="AS6/0/GenericNeuronCell/v" scale="1mV" color="#00962a" timeScale="1ms" />
+            <Line id="AS7" quantity="AS7/0/GenericNeuronCell/v" scale="1mV" color="#c6f524" timeScale="1ms" />
+            <Line id="AS8" quantity="AS8/0/GenericNeuronCell/v" scale="1mV" color="#cf2d27" timeScale="1ms" />
+            <Line id="AS9" quantity="AS9/0/GenericNeuronCell/v" scale="1mV" color="#006359" timeScale="1ms" />
+            <Line id="AVAL" quantity="AVAL/0/GenericNeuronCell/v" scale="1mV" color="#c979d2" timeScale="1ms" />
+            <Line id="AVAR" quantity="AVAR/0/GenericNeuronCell/v" scale="1mV" color="#d14b1f" timeScale="1ms" />
+            <Line id="AVBL" quantity="AVBL/0/GenericNeuronCell/v" scale="1mV" color="#88d57c" timeScale="1ms" />
+            <Line id="AVBR" quantity="AVBR/0/GenericNeuronCell/v" scale="1mV" color="#58b4d0" timeScale="1ms" />
+            <Line id="DA1" quantity="DA1/0/GenericNeuronCell/v" scale="1mV" color="#27d8b9" timeScale="1ms" />
+            <Line id="DA2" quantity="DA2/0/GenericNeuronCell/v" scale="1mV" color="#650049" timeScale="1ms" />
+            <Line id="DA3" quantity="DA3/0/GenericNeuronCell/v" scale="1mV" color="#efb351" timeScale="1ms" />
+            <Line id="DA4" quantity="DA4/0/GenericNeuronCell/v" scale="1mV" color="#126d33" timeScale="1ms" />
+            <Line id="DA5" quantity="DA5/0/GenericNeuronCell/v" scale="1mV" color="#80d25c" timeScale="1ms" />
+            <Line id="DA6" quantity="DA6/0/GenericNeuronCell/v" scale="1mV" color="#2c964d" timeScale="1ms" />
+            <Line id="DA7" quantity="DA7/0/GenericNeuronCell/v" scale="1mV" color="#c68d55" timeScale="1ms" />
+            <Line id="DA8" quantity="DA8/0/GenericNeuronCell/v" scale="1mV" color="#d81153" timeScale="1ms" />
+            <Line id="DA9" quantity="DA9/0/GenericNeuronCell/v" scale="1mV" color="#c22637" timeScale="1ms" />
+            <Line id="DB1" quantity="DB1/0/GenericNeuronCell/v" scale="1mV" color="#d361e0" timeScale="1ms" />
+            <Line id="DB2" quantity="DB2/0/GenericNeuronCell/v" scale="1mV" color="#6cb0d9" timeScale="1ms" />
+            <Line id="DB3" quantity="DB3/0/GenericNeuronCell/v" scale="1mV" color="#69dc47" timeScale="1ms" />
+            <Line id="DB4" quantity="DB4/0/GenericNeuronCell/v" scale="1mV" color="#b89600" timeScale="1ms" />
+            <Line id="DB5" quantity="DB5/0/GenericNeuronCell/v" scale="1mV" color="#2a4f12" timeScale="1ms" />
+            <Line id="DB6" quantity="DB6/0/GenericNeuronCell/v" scale="1mV" color="#7b667a" timeScale="1ms" />
+            <Line id="DB7" quantity="DB7/0/GenericNeuronCell/v" scale="1mV" color="#3485ee" timeScale="1ms" />
+            <Line id="DD1" quantity="DD1/0/GenericNeuronCell/v" scale="1mV" color="#cdbaa9" timeScale="1ms" />
+            <Line id="DD2" quantity="DD2/0/GenericNeuronCell/v" scale="1mV" color="#1023e8" timeScale="1ms" />
+            <Line id="DD3" quantity="DD3/0/GenericNeuronCell/v" scale="1mV" color="#ff4cb0" timeScale="1ms" />
+            <Line id="DD4" quantity="DD4/0/GenericNeuronCell/v" scale="1mV" color="#32d147" timeScale="1ms" />
+            <Line id="DD5" quantity="DD5/0/GenericNeuronCell/v" scale="1mV" color="#555244" timeScale="1ms" />
+            <Line id="DD6" quantity="DD6/0/GenericNeuronCell/v" scale="1mV" color="#d34223" timeScale="1ms" />
+            <Line id="VA1" quantity="VA1/0/GenericNeuronCell/v" scale="1mV" color="#faabfe" timeScale="1ms" />
+            <Line id="VA10" quantity="VA10/0/GenericNeuronCell/v" scale="1mV" color="#11c34e" timeScale="1ms" />
+            <Line id="VA11" quantity="VA11/0/GenericNeuronCell/v" scale="1mV" color="#81a7d0" timeScale="1ms" />
+            <Line id="VA12" quantity="VA12/0/GenericNeuronCell/v" scale="1mV" color="#2980f1" timeScale="1ms" />
+            <Line id="VA2" quantity="VA2/0/GenericNeuronCell/v" scale="1mV" color="#9f25f3" timeScale="1ms" />
+            <Line id="VA3" quantity="VA3/0/GenericNeuronCell/v" scale="1mV" color="#81c6db" timeScale="1ms" />
+            <Line id="VA4" quantity="VA4/0/GenericNeuronCell/v" scale="1mV" color="#899972" timeScale="1ms" />
+            <Line id="VA5" quantity="VA5/0/GenericNeuronCell/v" scale="1mV" color="#ade39b" timeScale="1ms" />
+            <Line id="VA6" quantity="VA6/0/GenericNeuronCell/v" scale="1mV" color="#58f1b1" timeScale="1ms" />
+            <Line id="VA7" quantity="VA7/0/GenericNeuronCell/v" scale="1mV" color="#73144b" timeScale="1ms" />
+            <Line id="VA8" quantity="VA8/0/GenericNeuronCell/v" scale="1mV" color="#a7b2cc" timeScale="1ms" />
+            <Line id="VA9" quantity="VA9/0/GenericNeuronCell/v" scale="1mV" color="#2ca436" timeScale="1ms" />
+            <Line id="VB1" quantity="VB1/0/GenericNeuronCell/v" scale="1mV" color="#bb8022" timeScale="1ms" />
+            <Line id="VB10" quantity="VB10/0/GenericNeuronCell/v" scale="1mV" color="#ea7899" timeScale="1ms" />
+            <Line id="VB11" quantity="VB11/0/GenericNeuronCell/v" scale="1mV" color="#3c0050" timeScale="1ms" />
+            <Line id="VB2" quantity="VB2/0/GenericNeuronCell/v" scale="1mV" color="#de8998" timeScale="1ms" />
+            <Line id="VB3" quantity="VB3/0/GenericNeuronCell/v" scale="1mV" color="#eeb7a5" timeScale="1ms" />
+            <Line id="VB4" quantity="VB4/0/GenericNeuronCell/v" scale="1mV" color="#f88b69" timeScale="1ms" />
+            <Line id="VB5" quantity="VB5/0/GenericNeuronCell/v" scale="1mV" color="#2cf396" timeScale="1ms" />
+            <Line id="VB6" quantity="VB6/0/GenericNeuronCell/v" scale="1mV" color="#96d484" timeScale="1ms" />
+            <Line id="VB7" quantity="VB7/0/GenericNeuronCell/v" scale="1mV" color="#1aadda" timeScale="1ms" />
+            <Line id="VB8" quantity="VB8/0/GenericNeuronCell/v" scale="1mV" color="#7d8c21" timeScale="1ms" />
+            <Line id="VB9" quantity="VB9/0/GenericNeuronCell/v" scale="1mV" color="#56f5b6" timeScale="1ms" />
+            <Line id="VD1" quantity="VD1/0/GenericNeuronCell/v" scale="1mV" color="#79efee" timeScale="1ms" />
+            <Line id="VD10" quantity="VD10/0/GenericNeuronCell/v" scale="1mV" color="#8afe16" timeScale="1ms" />
+            <Line id="VD11" quantity="VD11/0/GenericNeuronCell/v" scale="1mV" color="#61b233" timeScale="1ms" />
+            <Line id="VD12" quantity="VD12/0/GenericNeuronCell/v" scale="1mV" color="#1900ae" timeScale="1ms" />
+            <Line id="VD13" quantity="VD13/0/GenericNeuronCell/v" scale="1mV" color="#eeb7e7" timeScale="1ms" />
+            <Line id="VD2" quantity="VD2/0/GenericNeuronCell/v" scale="1mV" color="#99ece9" timeScale="1ms" />
+            <Line id="VD3" quantity="VD3/0/GenericNeuronCell/v" scale="1mV" color="#28ec31" timeScale="1ms" />
+            <Line id="VD4" quantity="VD4/0/GenericNeuronCell/v" scale="1mV" color="#5645e4" timeScale="1ms" />
+            <Line id="VD5" quantity="VD5/0/GenericNeuronCell/v" scale="1mV" color="#3f49f9" timeScale="1ms" />
+            <Line id="VD6" quantity="VD6/0/GenericNeuronCell/v" scale="1mV" color="#f6ec5a" timeScale="1ms" />
+            <Line id="VD7" quantity="VD7/0/GenericNeuronCell/v" scale="1mV" color="#8dc8b8" timeScale="1ms" />
+            <Line id="VD8" quantity="VD8/0/GenericNeuronCell/v" scale="1mV" color="#a6b77c" timeScale="1ms" />
+            <Line id="VD9" quantity="VD9/0/GenericNeuronCell/v" scale="1mV" color="#d554d2" timeScale="1ms" />
+            
+        </Display>
+      
+        <Display id="activity_neurons" title="c302_C2_FW_VNC: Activity of a number of neurons" timeScale="1ms" xmin="-600.0" xmax="6600.0" ymin="-0.1" ymax="1.1">
+            
+            <Line id="AS1" quantity="AS1/0/GenericNeuronCell/caConc" scale="1" color="#eaf195" timeScale="1ms" />
+            <Line id="AS10" quantity="AS10/0/GenericNeuronCell/caConc" scale="1" color="#3c00ca" timeScale="1ms" />
+            <Line id="AS11" quantity="AS11/0/GenericNeuronCell/caConc" scale="1" color="#262f1d" timeScale="1ms" />
+            <Line id="AS2" quantity="AS2/0/GenericNeuronCell/caConc" scale="1" color="#108b77" timeScale="1ms" />
+            <Line id="AS3" quantity="AS3/0/GenericNeuronCell/caConc" scale="1" color="#458fa5" timeScale="1ms" />
+            <Line id="AS4" quantity="AS4/0/GenericNeuronCell/caConc" scale="1" color="#ef7488" timeScale="1ms" />
+            <Line id="AS5" quantity="AS5/0/GenericNeuronCell/caConc" scale="1" color="#247960" timeScale="1ms" />
+            <Line id="AS6" quantity="AS6/0/GenericNeuronCell/caConc" scale="1" color="#8f25f0" timeScale="1ms" />
+            <Line id="AS7" quantity="AS7/0/GenericNeuronCell/caConc" scale="1" color="#4e0047" timeScale="1ms" />
+            <Line id="AS8" quantity="AS8/0/GenericNeuronCell/caConc" scale="1" color="#f527d6" timeScale="1ms" />
+            <Line id="AS9" quantity="AS9/0/GenericNeuronCell/caConc" scale="1" color="#57d17a" timeScale="1ms" />
+            <Line id="AVAL" quantity="AVAL/0/GenericNeuronCell/caConc" scale="1" color="#e270c8" timeScale="1ms" />
+            <Line id="AVAR" quantity="AVAR/0/GenericNeuronCell/caConc" scale="1" color="#2f701e" timeScale="1ms" />
+            <Line id="AVBL" quantity="AVBL/0/GenericNeuronCell/caConc" scale="1" color="#d2a8a4" timeScale="1ms" />
+            <Line id="AVBR" quantity="AVBR/0/GenericNeuronCell/caConc" scale="1" color="#28e945" timeScale="1ms" />
+            <Line id="DA1" quantity="DA1/0/GenericNeuronCell/caConc" scale="1" color="#cb7212" timeScale="1ms" />
+            <Line id="DA2" quantity="DA2/0/GenericNeuronCell/caConc" scale="1" color="#008216" timeScale="1ms" />
+            <Line id="DA3" quantity="DA3/0/GenericNeuronCell/caConc" scale="1" color="#f21142" timeScale="1ms" />
+            <Line id="DA4" quantity="DA4/0/GenericNeuronCell/caConc" scale="1" color="#65b5e4" timeScale="1ms" />
+            <Line id="DA5" quantity="DA5/0/GenericNeuronCell/caConc" scale="1" color="#dc84b4" timeScale="1ms" />
+            <Line id="DA6" quantity="DA6/0/GenericNeuronCell/caConc" scale="1" color="#d08980" timeScale="1ms" />
+            <Line id="DA7" quantity="DA7/0/GenericNeuronCell/caConc" scale="1" color="#21a0ed" timeScale="1ms" />
+            <Line id="DA8" quantity="DA8/0/GenericNeuronCell/caConc" scale="1" color="#00ada4" timeScale="1ms" />
+            <Line id="DA9" quantity="DA9/0/GenericNeuronCell/caConc" scale="1" color="#6fbd35" timeScale="1ms" />
+            <Line id="DB1" quantity="DB1/0/GenericNeuronCell/caConc" scale="1" color="#f68aec" timeScale="1ms" />
+            <Line id="DB2" quantity="DB2/0/GenericNeuronCell/caConc" scale="1" color="#d71742" timeScale="1ms" />
+            <Line id="DB3" quantity="DB3/0/GenericNeuronCell/caConc" scale="1" color="#1d6036" timeScale="1ms" />
+            <Line id="DB4" quantity="DB4/0/GenericNeuronCell/caConc" scale="1" color="#e171c7" timeScale="1ms" />
+            <Line id="DB5" quantity="DB5/0/GenericNeuronCell/caConc" scale="1" color="#656eaf" timeScale="1ms" />
+            <Line id="DB6" quantity="DB6/0/GenericNeuronCell/caConc" scale="1" color="#485e9a" timeScale="1ms" />
+            <Line id="DB7" quantity="DB7/0/GenericNeuronCell/caConc" scale="1" color="#75aba9" timeScale="1ms" />
+            <Line id="DD1" quantity="DD1/0/GenericNeuronCell/caConc" scale="1" color="#1a5ecc" timeScale="1ms" />
+            <Line id="DD2" quantity="DD2/0/GenericNeuronCell/caConc" scale="1" color="#97fbc1" timeScale="1ms" />
+            <Line id="DD3" quantity="DD3/0/GenericNeuronCell/caConc" scale="1" color="#54f34b" timeScale="1ms" />
+            <Line id="DD4" quantity="DD4/0/GenericNeuronCell/caConc" scale="1" color="#899a57" timeScale="1ms" />
+            <Line id="DD5" quantity="DD5/0/GenericNeuronCell/caConc" scale="1" color="#c3978c" timeScale="1ms" />
+            <Line id="DD6" quantity="DD6/0/GenericNeuronCell/caConc" scale="1" color="#0000fe" timeScale="1ms" />
+            <Line id="VA1" quantity="VA1/0/GenericNeuronCell/caConc" scale="1" color="#846f84" timeScale="1ms" />
+            <Line id="VA10" quantity="VA10/0/GenericNeuronCell/caConc" scale="1" color="#b3e938" timeScale="1ms" />
+            <Line id="VA11" quantity="VA11/0/GenericNeuronCell/caConc" scale="1" color="#af5590" timeScale="1ms" />
+            <Line id="VA12" quantity="VA12/0/GenericNeuronCell/caConc" scale="1" color="#f42388" timeScale="1ms" />
+            <Line id="VA2" quantity="VA2/0/GenericNeuronCell/caConc" scale="1" color="#3e2a82" timeScale="1ms" />
+            <Line id="VA3" quantity="VA3/0/GenericNeuronCell/caConc" scale="1" color="#53b690" timeScale="1ms" />
+            <Line id="VA4" quantity="VA4/0/GenericNeuronCell/caConc" scale="1" color="#5feec4" timeScale="1ms" />
+            <Line id="VA5" quantity="VA5/0/GenericNeuronCell/caConc" scale="1" color="#123ace" timeScale="1ms" />
+            <Line id="VA6" quantity="VA6/0/GenericNeuronCell/caConc" scale="1" color="#617e00" timeScale="1ms" />
+            <Line id="VA7" quantity="VA7/0/GenericNeuronCell/caConc" scale="1" color="#ee26ad" timeScale="1ms" />
+            <Line id="VA8" quantity="VA8/0/GenericNeuronCell/caConc" scale="1" color="#de5b5f" timeScale="1ms" />
+            <Line id="VA9" quantity="VA9/0/GenericNeuronCell/caConc" scale="1" color="#32fe9f" timeScale="1ms" />
+            <Line id="VB1" quantity="VB1/0/GenericNeuronCell/caConc" scale="1" color="#e9a700" timeScale="1ms" />
+            <Line id="VB10" quantity="VB10/0/GenericNeuronCell/caConc" scale="1" color="#5f65c8" timeScale="1ms" />
+            <Line id="VB11" quantity="VB11/0/GenericNeuronCell/caConc" scale="1" color="#fd1e9a" timeScale="1ms" />
+            <Line id="VB2" quantity="VB2/0/GenericNeuronCell/caConc" scale="1" color="#8a525d" timeScale="1ms" />
+            <Line id="VB3" quantity="VB3/0/GenericNeuronCell/caConc" scale="1" color="#75eae1" timeScale="1ms" />
+            <Line id="VB4" quantity="VB4/0/GenericNeuronCell/caConc" scale="1" color="#3146de" timeScale="1ms" />
+            <Line id="VB5" quantity="VB5/0/GenericNeuronCell/caConc" scale="1" color="#d988c1" timeScale="1ms" />
+            <Line id="VB6" quantity="VB6/0/GenericNeuronCell/caConc" scale="1" color="#bace5f" timeScale="1ms" />
+            <Line id="VB7" quantity="VB7/0/GenericNeuronCell/caConc" scale="1" color="#d620c9" timeScale="1ms" />
+            <Line id="VB8" quantity="VB8/0/GenericNeuronCell/caConc" scale="1" color="#c53db3" timeScale="1ms" />
+            <Line id="VB9" quantity="VB9/0/GenericNeuronCell/caConc" scale="1" color="#5b8c30" timeScale="1ms" />
+            <Line id="VD1" quantity="VD1/0/GenericNeuronCell/caConc" scale="1" color="#527186" timeScale="1ms" />
+            <Line id="VD10" quantity="VD10/0/GenericNeuronCell/caConc" scale="1" color="#329c56" timeScale="1ms" />
+            <Line id="VD11" quantity="VD11/0/GenericNeuronCell/caConc" scale="1" color="#00f951" timeScale="1ms" />
+            <Line id="VD12" quantity="VD12/0/GenericNeuronCell/caConc" scale="1" color="#6c57fb" timeScale="1ms" />
+            <Line id="VD13" quantity="VD13/0/GenericNeuronCell/caConc" scale="1" color="#2af900" timeScale="1ms" />
+            <Line id="VD2" quantity="VD2/0/GenericNeuronCell/caConc" scale="1" color="#b4ed9c" timeScale="1ms" />
+            <Line id="VD3" quantity="VD3/0/GenericNeuronCell/caConc" scale="1" color="#747280" timeScale="1ms" />
+            <Line id="VD4" quantity="VD4/0/GenericNeuronCell/caConc" scale="1" color="#64b07e" timeScale="1ms" />
+            <Line id="VD5" quantity="VD5/0/GenericNeuronCell/caConc" scale="1" color="#e8283b" timeScale="1ms" />
+            <Line id="VD6" quantity="VD6/0/GenericNeuronCell/caConc" scale="1" color="#8b6e72" timeScale="1ms" />
+            <Line id="VD7" quantity="VD7/0/GenericNeuronCell/caConc" scale="1" color="#b8123e" timeScale="1ms" />
+            <Line id="VD8" quantity="VD8/0/GenericNeuronCell/caConc" scale="1" color="#c8f5b1" timeScale="1ms" />
+            <Line id="VD9" quantity="VD9/0/GenericNeuronCell/caConc" scale="1" color="#85cfaf" timeScale="1ms" />
+
+        </Display>
+
+        <OutputFile id="neurons_v" fileName="c302_C2_FW_VNC.dat">
+            <OutputColumn id="AS1_v" quantity="AS1/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS10_v" quantity="AS10/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS11_v" quantity="AS11/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS2_v" quantity="AS2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS3_v" quantity="AS3/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS4_v" quantity="AS4/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS5_v" quantity="AS5/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS6_v" quantity="AS6/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS7_v" quantity="AS7/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS8_v" quantity="AS8/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AS9_v" quantity="AS9/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AVAL_v" quantity="AVAL/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AVAR_v" quantity="AVAR/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AVBL_v" quantity="AVBL/0/GenericNeuronCell/v"/>
+            <OutputColumn id="AVBR_v" quantity="AVBR/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA1_v" quantity="DA1/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA2_v" quantity="DA2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA3_v" quantity="DA3/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA4_v" quantity="DA4/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA5_v" quantity="DA5/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA6_v" quantity="DA6/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA7_v" quantity="DA7/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA8_v" quantity="DA8/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DA9_v" quantity="DA9/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DB1_v" quantity="DB1/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DB2_v" quantity="DB2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DB3_v" quantity="DB3/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DB4_v" quantity="DB4/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DB5_v" quantity="DB5/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DB6_v" quantity="DB6/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DB7_v" quantity="DB7/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DD1_v" quantity="DD1/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DD2_v" quantity="DD2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DD3_v" quantity="DD3/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DD4_v" quantity="DD4/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DD5_v" quantity="DD5/0/GenericNeuronCell/v"/>
+            <OutputColumn id="DD6_v" quantity="DD6/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA1_v" quantity="VA1/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA10_v" quantity="VA10/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA11_v" quantity="VA11/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA12_v" quantity="VA12/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA2_v" quantity="VA2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA3_v" quantity="VA3/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA4_v" quantity="VA4/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA5_v" quantity="VA5/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA6_v" quantity="VA6/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA7_v" quantity="VA7/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA8_v" quantity="VA8/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VA9_v" quantity="VA9/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB1_v" quantity="VB1/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB10_v" quantity="VB10/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB11_v" quantity="VB11/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB2_v" quantity="VB2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB3_v" quantity="VB3/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB4_v" quantity="VB4/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB5_v" quantity="VB5/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB6_v" quantity="VB6/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB7_v" quantity="VB7/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB8_v" quantity="VB8/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VB9_v" quantity="VB9/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD1_v" quantity="VD1/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD10_v" quantity="VD10/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD11_v" quantity="VD11/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD12_v" quantity="VD12/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD13_v" quantity="VD13/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD2_v" quantity="VD2/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD3_v" quantity="VD3/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD4_v" quantity="VD4/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD5_v" quantity="VD5/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD6_v" quantity="VD6/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD7_v" quantity="VD7/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD8_v" quantity="VD8/0/GenericNeuronCell/v"/>
+            <OutputColumn id="VD9_v" quantity="VD9/0/GenericNeuronCell/v"/>
+        </OutputFile>
+        
+        <OutputFile id="neurons_activity" fileName="c302_C2_FW_VNC.activity.dat">
+            <OutputColumn id="AS1_v" quantity="AS1/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS10_v" quantity="AS10/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS11_v" quantity="AS11/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS2_v" quantity="AS2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS3_v" quantity="AS3/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS4_v" quantity="AS4/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS5_v" quantity="AS5/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS6_v" quantity="AS6/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS7_v" quantity="AS7/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS8_v" quantity="AS8/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AS9_v" quantity="AS9/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AVAL_v" quantity="AVAL/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AVAR_v" quantity="AVAR/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AVBL_v" quantity="AVBL/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="AVBR_v" quantity="AVBR/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA1_v" quantity="DA1/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA2_v" quantity="DA2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA3_v" quantity="DA3/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA4_v" quantity="DA4/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA5_v" quantity="DA5/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA6_v" quantity="DA6/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA7_v" quantity="DA7/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA8_v" quantity="DA8/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DA9_v" quantity="DA9/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DB1_v" quantity="DB1/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DB2_v" quantity="DB2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DB3_v" quantity="DB3/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DB4_v" quantity="DB4/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DB5_v" quantity="DB5/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DB6_v" quantity="DB6/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DB7_v" quantity="DB7/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DD1_v" quantity="DD1/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DD2_v" quantity="DD2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DD3_v" quantity="DD3/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DD4_v" quantity="DD4/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DD5_v" quantity="DD5/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="DD6_v" quantity="DD6/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA1_v" quantity="VA1/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA10_v" quantity="VA10/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA11_v" quantity="VA11/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA12_v" quantity="VA12/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA2_v" quantity="VA2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA3_v" quantity="VA3/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA4_v" quantity="VA4/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA5_v" quantity="VA5/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA6_v" quantity="VA6/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA7_v" quantity="VA7/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA8_v" quantity="VA8/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VA9_v" quantity="VA9/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB1_v" quantity="VB1/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB10_v" quantity="VB10/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB11_v" quantity="VB11/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB2_v" quantity="VB2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB3_v" quantity="VB3/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB4_v" quantity="VB4/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB5_v" quantity="VB5/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB6_v" quantity="VB6/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB7_v" quantity="VB7/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB8_v" quantity="VB8/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VB9_v" quantity="VB9/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD1_v" quantity="VD1/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD10_v" quantity="VD10/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD11_v" quantity="VD11/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD12_v" quantity="VD12/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD13_v" quantity="VD13/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD2_v" quantity="VD2/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD3_v" quantity="VD3/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD4_v" quantity="VD4/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD5_v" quantity="VD5/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD6_v" quantity="VD6/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD7_v" quantity="VD7/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD8_v" quantity="VD8/0/GenericNeuronCell/caConc"/>
+            <OutputColumn id="VD9_v" quantity="VD9/0/GenericNeuronCell/caConc"/>
+        </OutputFile>
+    </Simulation>
+
+
+</Lems>
